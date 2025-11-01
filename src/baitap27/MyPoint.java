@@ -1,4 +1,4 @@
-package baitap26;
+package baitap27;
 
 public class MyPoint {
     private int x;
@@ -34,12 +34,16 @@ public class MyPoint {
         this.x = x;
         this.y = y;
     }
+
     public int[] getXY() {
         return new int[] { x, y };
     }
+
+    @Override
     public String toString() {
         return "(" + x + "," + y + ")";
     }
+
     public double distance(int x, int y) {
         int xDiff = this.x - x;
         int yDiff = this.y - y;
