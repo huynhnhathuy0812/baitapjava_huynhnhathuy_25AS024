@@ -1,4 +1,4 @@
-package baitap28;
+package baitap29;
 
 public class MyPoint {
     private int x;
@@ -32,24 +32,8 @@ public class MyPoint {
         this.y = y;
     }
 
-    public int[] getXY() {
-        return new int[]{x, y};
-    }
-
-    public void setXY(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    // Tính khoảng cách giữa 2 điểm
-    public double distance(MyPoint another) {
-        int dx = this.x - another.x;
-        int dy = this.y - another.y;
-        return Math.sqrt(dx * dx + dy * dy);
-    }
-
-    // toString()
-    public String toString() {
-        return "(" + x + "," + y + ")";
+    public double distance(MyPoint v2) {
+        return 0;
     }
 }
+
