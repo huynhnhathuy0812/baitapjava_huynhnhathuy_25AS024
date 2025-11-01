@@ -1,9 +1,10 @@
-package baitap27;
+package baitap28;
 
 public class MyPoint {
     private int x;
     private int y;
 
+    // Constructors
     public MyPoint() {
         this.x = 0;
         this.y = 0;
@@ -14,6 +15,7 @@ public class MyPoint {
         this.y = y;
     }
 
+    // Getters and Setters
     public int getX() {
         return x;
     }
@@ -30,34 +32,24 @@ public class MyPoint {
         this.y = y;
     }
 
+    public int[] getXY() {
+        return new int[]{x, y};
+    }
+
     public void setXY(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    public int[] getXY() {
-        return new int[] { x, y };
+    // Tính khoảng cách giữa 2 điểm
+    public double distance(MyPoint another) {
+        int dx = this.x - another.x;
+        int dy = this.y - another.y;
+        return Math.sqrt(dx * dx + dy * dy);
     }
 
-    @Override
+    // toString()
     public String toString() {
         return "(" + x + "," + y + ")";
     }
-
-    public double distance(int x, int y) {
-        int xDiff = this.x - x;
-        int yDiff = this.y - y;
-        return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
-    }
-
-    public double distance(MyPoint another) {
-        int xDiff = this.x - another.x;
-        int yDiff = this.y - another.y;
-        return Math.sqrt(xDiff * xDiff + yDiff * yDiff);
-    }
-
-    public double distance() {
-        return Math.sqrt(x * x + y * y);
-    }
 }
-
