@@ -1,8 +1,7 @@
-package baitap44;
+package baitap45;
 
-class Circle extends Shape {
+public class Circle extends Shape {
     private double radius;
-
 
     public Circle() {
         super();
@@ -18,7 +17,6 @@ class Circle extends Shape {
         super(color, filled);
         this.radius = radius;
     }
-
 
     public double getRadius() {
         return radius;

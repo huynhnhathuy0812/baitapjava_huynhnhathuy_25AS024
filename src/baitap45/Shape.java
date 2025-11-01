@@ -1,9 +1,8 @@
-package baitap44;
+package baitap45;
 
 public class Shape {
     private String color;
     private boolean filled;
-
 
     public Shape() {
         this.color = "green";
@@ -14,7 +13,6 @@ public class Shape {
         this.color = color;
         this.filled = filled;
     }
-
 
     public String getColor() {
         return color;
@@ -37,3 +35,4 @@ public class Shape {
         return "A Shape with color of " + color + " and " + (filled ? "filled" : "not filled");
     }
 }
+
