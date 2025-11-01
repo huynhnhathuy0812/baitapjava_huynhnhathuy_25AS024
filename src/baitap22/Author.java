@@ -1,4 +1,4 @@
-package baitai21;
+package baitap22;
 
 public class Author {
     private String name;
@@ -27,7 +27,6 @@ public class Author {
         return gender;
     }
 
-    @Override
     public String toString() {
         return "Author[name=" + name + ",email=" + email + ",gender=" + gender + "]";
     }
