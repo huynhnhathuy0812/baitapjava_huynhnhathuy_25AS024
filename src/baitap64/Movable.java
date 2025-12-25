@@ -1,4 +1,4 @@
-package baitap63;
+package baitap64;
 
 public interface Movable {
     void moveUp();

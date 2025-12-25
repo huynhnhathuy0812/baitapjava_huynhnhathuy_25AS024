@@ -1,4 +1,4 @@
-package baitap63;
+package baitap64;
 
 public class MovablePoint implements Movable {
     int x;
@@ -15,7 +15,7 @@ public class MovablePoint implements Movable {
 
     @Override
     public String toString() {
-        return "(" + x + ", " + y + ") speed=(" + xSpeed + ", " + ySpeed + ")";
+        return "(" + x + "," + y + "),speed=(" + xSpeed + "," + ySpeed + ")";
     }
 
     @Override
@@ -30,11 +30,11 @@ public class MovablePoint implements Movable {
 
     @Override
     public void moveLeft() {
-        x -= xSpeed; // Di chuyển sang trái (giảm giá trị x)
+        x -= xSpeed;
     }
 
     @Override
     public void moveRight() {
-        x += xSpeed; // Di chuyển sang phải (tăng giá trị x)
+        x += xSpeed;
     }
 }
